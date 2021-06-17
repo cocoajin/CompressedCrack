@@ -2,7 +2,20 @@
 
 Compressed Crack is a simple tool to help you crack password zip and rar files.
 
-Author: Thanh Minh
+## Use in Docker
+
+```bash
+# build docker image
+build -t zipcrack:1 .
+
+# run in background
+
+docker run -d -v /Users/cc/Desktop/srcd:/data zipcrack:1 \
+    python crack.py -i /data/test.zip 4 4 "0123456789"
+
+```
+
+
 
 ## Requirements:
 
